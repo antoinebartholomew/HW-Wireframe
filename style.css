@@ -1,0 +1,129 @@
+/**
+ * Float Layout Activity
+ **/
+
+ /* questions
+
+ what is the clear fix hack, and how can I use it...
+
+ Content: “”;
+Display: block;
+Clear: both;
+}
+Clearfix hack
+
+ styles cascade down...is that in reffrence to the location of
+ items...ie body nav, etc or items in the html or both?
+
+ style id's # --- or class . --- or the red text "body", header, nav
+ they are styled with out the . or #.  Whats going on here?
+...this is styling directly to an html element, which is not the best way to style css
+  */
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+
+    background-color: #green; /* this isnt working */
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+nav {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+footer {
+  clear: both;   /*does this need to be here?  */
+  padding:10px 20px 10px 20px;
+  margin-bottom: 20px;
+  margin-top: 300px;
+
+  border: 10px solid #red; /* this doesn't show??? */
+}
+
+nav, header, footer {
+
+  color: #777;
+  background: #ebebeb;
+}
+
+#container {
+    width: 960px;
+    background-color: #777;
+    margin:0 auto; /* shifts entire container to move left/center of page
+    /* overflow: none;
+    display: block;
+    z-index: 1; */
+}
+
+.Photo {
+    float: right;
+    width: 425px;
+    /*height: auto;*/
+    height: 315px;
+    /*height: 290px;*/
+    /*padding: 20px;*/
+    margin-bottom: : 20px;
+    background: #ebebeb;
+}
+
+
+
+
+section {
+
+}
+
+#left {
+  float: left;
+  width: 495px;
+  height: 315px;
+  padding: 20px;
+  margin-bottom: : 20px;
+  background: #ebebeb;
+  color: #gray;
+}
+.container{
+  margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.article{
+  /*padding: 20px;*/
+  border:1px solid black;
+  /*margin-bottom: 20px;*/
+  background: #black;
+  color: ##ebebeb;
+}
+.h1h2h3{
+
+
+  height: 50px;
+  padding: 20px;
+  border:1px solid black;
+  margin-bottom: 20px;
+  background: #ebebeb;
+  color: #gray;
+}
+.p{
+
+
+  height: 50px;
+  padding: 20px;
+  border:1px solid black;
+  margin-bottom: 20px;
+  background: #ebebeb;
+  color: #gray;
+}
